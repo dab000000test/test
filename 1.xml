@@ -4,7 +4,14 @@
     <object>
         <Category>flatSale</Category>
         <ExternalId>5289</ExternalId>
+        <Address>г. Москва, ул. Полярная, 3</Address>
         <FlatRoomsCount>1</FlatRoomsCount>
+        <Phones>
+            <PhoneSchema>
+                <CountryCode>7</CountryCode>
+                <Number>5555555</Number>
+            </PhoneSchema>
+        </Phones>
         <TotalArea>44.0</TotalArea>
         <FloorNumber>12</FloorNumber>
         <Building>
