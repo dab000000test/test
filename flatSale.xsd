@@ -1,0 +1,345 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="feed">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element fixed="2" name="feed_version" type="xs:integer"/>
+                <xs:element minOccurs="1" maxOccurs="unbounded" name="object">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element fixed="flatSale" name="Category" type="xs:string"/>
+                            <xs:element minOccurs="0" name="Auction">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" name="Bet" type="xs:double"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="1" name="ExternalId" type="xs:string"/>
+                            <xs:element minOccurs="0" name="RoomType">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="both"/>
+                                        <xs:enumeration value="combined"/>
+                                        <xs:enumeration value="separate"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="1" name="Description" type="xs:string"/>
+                            <xs:element minOccurs="1" name="Address" type="xs:string"/>
+                            <xs:element minOccurs="0" name="Coordinates">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" name="Lat" type="xs:double"/>
+                                        <xs:element minOccurs="0" name="Lng" type="xs:double"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="CadastralNumber" type="xs:string"/>
+                            <xs:element minOccurs="1" name="FlatRoomsCount" type="xs:integer"/>
+                            <xs:element minOccurs="1" name="Phones">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" maxOccurs="unbounded" name="PhoneSchema">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="1" name="CountryCode" type="xs:string"/>
+                                                    <xs:element minOccurs="1" name="Number" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Highway">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" name="Id" type="xs:integer"/>
+                                        <xs:element minOccurs="0" name="Distance" type="xs:double"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="IsApartments" type="xs:boolean"/>
+                            <xs:element minOccurs="0" name="Undergrounds">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" maxOccurs="unbounded" name="UndergroundInfoSchema">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="0" name="Id" type="xs:integer"/>
+                                                    <xs:element minOccurs="0" name="Time" type="xs:integer"/>
+                                                    <xs:element minOccurs="0" name="TransportType">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="transport"/>
+                                                                <xs:enumeration value="walk"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="IsPenthouse" type="xs:boolean"/>
+                            <xs:element minOccurs="1" name="TotalArea" type="xs:double"/>
+                            <xs:element minOccurs="1" name="FloorNumber" type="xs:integer"/>
+                            <xs:element minOccurs="0" name="JKSchema">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" name="Id" type="xs:integer"/>
+                                        <xs:element minOccurs="0" name="Name" type="xs:string"/>
+                                        <xs:element minOccurs="0" name="House">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="0" name="Id" type="xs:integer"/>
+                                                    <xs:element minOccurs="0" name="Name" type="xs:string"/>
+                                                    <xs:element minOccurs="0" name="Flat">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" name="FlatNumber" type="xs:integer"/>
+                                                                <xs:element minOccurs="0" name="SectionNumber" type="xs:string"/>
+                                                                <xs:element minOccurs="0" name="FlatType" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="SubAgent">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" name="Email" type="xs:string"/>
+                                        <xs:element minOccurs="0" name="Phone" type="xs:string"/>
+                                        <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+                                        <xs:element minOccurs="0" name="LastName" type="xs:string"/>
+                                        <xs:element minOccurs="0" name="AvatarUrl" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="AllRoomsArea" type="xs:string"/>
+                            <xs:element minOccurs="0" name="LivingArea" type="xs:double"/>
+                            <xs:element minOccurs="0" name="KitchenArea" type="xs:double"/>
+                            <xs:element minOccurs="0" name="LoggiasCount" type="xs:integer"/>
+                            <xs:element minOccurs="0" name="LayoutPhoto">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" name="FullUrl" type="xs:string"/>
+                                        <xs:element minOccurs="0" name="IsDefault" type="xs:boolean"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Photos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" maxOccurs="unbounded" name="PhotoSchema">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="0" name="FullUrl" type="xs:string"/>
+                                                    <xs:element minOccurs="0" name="IsDefault" type="xs:boolean"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="BalconiesCount" type="xs:integer"/>
+                            <xs:element minOccurs="0" name="WindowsViewType">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="street"/>
+                                        <xs:enumeration value="yard"/>
+                                        <xs:enumeration value="yardAndStreet"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="SeparateWcsCount" type="xs:integer"/>
+                            <xs:element minOccurs="0" name="CombinedWcsCount" type="xs:integer"/>
+                            <xs:element minOccurs="0" name="RepairType">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="cosmetic"/>
+                                        <xs:enumeration value="design"/>
+                                        <xs:enumeration value="euro"/>
+                                        <xs:enumeration value="no"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="HasPhone" type="xs:boolean"/>
+                            <xs:element minOccurs="0" name="HasRamp" type="xs:boolean"/>
+                            <xs:element minOccurs="0" name="IsInHiddenBase" type="xs:boolean"/>
+                            <xs:element minOccurs="0" name="Videos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" maxOccurs="unbounded" name="VideoSchema">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="0" name="Url" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Title" type="xs:string"/>
+                            <xs:element minOccurs="1" name="Building">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" name="Name" type="xs:string"/>
+                                        <xs:element minOccurs="1" name="FloorsCount" type="xs:integer"/>
+                                        <xs:element minOccurs="0" name="BuildYear" type="xs:integer"/>
+                                        <xs:element minOccurs="0" name="MaterialType">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="block"/>
+                                                    <xs:enumeration value="boards"/>
+                                                    <xs:enumeration value="brick"/>
+                                                    <xs:enumeration value="monolith"/>
+                                                    <xs:enumeration value="monolithBrick"/>
+                                                    <xs:enumeration value="old"/>
+                                                    <xs:enumeration value="panel"/>
+                                                    <xs:enumeration value="stalin"/>
+                                                    <xs:enumeration value="wood"/>
+                                                    <xs:enumeration value="wireframe"/>
+                                                    <xs:enumeration value="aerocreteBlock"/>
+                                                    <xs:enumeration value="gasSilicateBlock"/>
+                                                    <xs:enumeration value="foamConcreteBlock"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" name="Series" type="xs:string"/>
+                                        <xs:element minOccurs="0" name="CeilingHeight" type="xs:double"/>
+                                        <xs:element minOccurs="0" name="PassengerLiftsCount" type="xs:integer"/>
+                                        <xs:element minOccurs="0" name="CargoLiftsCount" type="xs:integer"/>
+                                        <xs:element minOccurs="0" name="HasGarbageChute" type="xs:boolean"/>
+                                        <xs:element minOccurs="0" name="Parking">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="0" name="Type">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="ground"/>
+                                                                <xs:enumeration value="multilevel"/>
+                                                                <xs:enumeration value="roof"/>
+                                                                <xs:enumeration value="underground"/>
+                                                                <xs:enumeration value="open"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="RentByPartsDescription" type="xs:string"/>
+                            <xs:element minOccurs="0" name="PublishTerms">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" name="Terms">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="1" maxOccurs="unbounded" name="PublishTermSchema">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" name="Services">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element minOccurs="1" maxOccurs="unbounded" name="ServicesEnum">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:enumeration value="free"/>
+                                                                                        <xs:enumeration value="highlight"/>
+                                                                                        <xs:enumeration value="paid"/>
+                                                                                        <xs:enumeration value="premium"/>
+                                                                                        <xs:enumeration value="top3"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element minOccurs="0" name="ExcludedServices">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element minOccurs="1" maxOccurs="unbounded" name="ExcludedServicesEnum">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:enumeration value="highlight"/>
+                                                                                        <xs:enumeration value="premium"/>
+                                                                                        <xs:enumeration value="top3"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element minOccurs="0" name="IgnoreServicePackages" type="xs:boolean"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="1" name="BargainTerms">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="1" name="Price" type="xs:double"/>
+                                        <xs:element minOccurs="0" default="rur" name="Currency">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="eur"/>
+                                                    <xs:enumeration value="rur"/>
+                                                    <xs:enumeration value="usd"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" name="MortgageAllowed" type="xs:boolean"/>
+                                        <xs:element minOccurs="0" name="SaleType">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="alternative"/>
+                                                    <xs:enumeration value="free"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" name="AgentBonus">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="0" name="Value" type="xs:double"/>
+                                                    <xs:element minOccurs="0" name="PaymentType">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="percent"/>
+                                                                <xs:enumeration value="fixed"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element minOccurs="0" name="Currency">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="eur"/>
+                                                                <xs:enumeration value="rur"/>
+                                                                <xs:enumeration value="usd"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
