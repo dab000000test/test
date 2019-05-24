@@ -16,9 +16,13 @@
         <FloorNumber>12</FloorNumber>
         <Building>
             <FloorsCount>12</FloorsCount>
+            <BuildYear>1980</BuildYear>
         </Building>
         <BargainTerms>
             <Price>5066720.0</Price>
+            <Currency>rur</Currency>
+            <MortgageAllowed>true</MortgageAllowed>
+            <SaleType>free</SaleType>
         </BargainTerms>
     </object>
 </feed>
