@@ -3,23 +3,124 @@
     <feed_version>2</feed_version>
     <object>
         <Category>flatSale</Category>
-        <ExternalId>5289</ExternalId>
-        <Address>г. Москва, ул. Полярная, 3</Address>
+        <ExternalId>13260</ExternalId>
+        <Description>Ad text</Description>
+        <Address>г. Москва, пр-кт. Мира, д. 183</Address>
         <FlatRoomsCount>1</FlatRoomsCount>
         <Phones>
             <PhoneSchema>
                 <CountryCode>7</CountryCode>
-                <Number>5555555</Number>
+                <Number>4951230987</Number>
             </PhoneSchema>
         </Phones>
-        <TotalArea>44.0</TotalArea>
-        <FloorNumber>12</FloorNumber>
+        <TotalArea>31.5</TotalArea>
+        <FloorNumber>4</FloorNumber>
+        <LivingArea>19.0</LivingArea>
+        <KitchenArea>5.7</KitchenArea>
+        <Photos>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDQ2</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDQ4</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDQ5</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDUz</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDU2</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDU3</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDU4</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDYw</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDYy</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDY0</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDY1</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDY2</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDY4</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDY5</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDcy</FullUrl>
+
+Даниил Клименко, [20.06.19 16:59]
+<IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDc3</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDc4</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDgw</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDgy</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDgz</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDg0</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDg2</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+            <PhotoSchema>
+                <FullUrl>https://test.srg-it.ru/sale/integration/cian/13260/photo/YmEvMjAxNzAyMDgvMDgzNy8xNTAwMDA5NDA1NDg4</FullUrl>
+                <IsDefault>false</IsDefault>
+            </PhotoSchema>
+        </Photos>
         <Building>
-            <FloorsCount>12</FloorsCount>
-            <BuildYear>1980</BuildYear>
+            <FloorsCount>5</FloorsCount>
+            <BuildYear>1963</BuildYear>
+            <MaterialType>brick</MaterialType>
+            <CeilingHeight>3.0</CeilingHeight>
         </Building>
         <BargainTerms>
-            <Price>5066720.0</Price>
+            <Price>5000000.0</Price>
             <Currency>rur</Currency>
             <MortgageAllowed>true</MortgageAllowed>
             <SaleType>free</SaleType>
